@@ -24,6 +24,11 @@ public class GameController {
         // 결과 계산
         String result = determineWinner(userChoice, computerChoice);
 
+        // 로그 출력 (여기에 추가)
+        System.out.println("사용자 선택: " + userChoice);
+        System.out.println("컴퓨터 선택: " + computerChoice);
+        System.out.println("결과: " + result);
+
         // 모델에 데이터 전달
         model.addAttribute("userChoice", userChoice);
         model.addAttribute("computerChoice", computerChoice);
