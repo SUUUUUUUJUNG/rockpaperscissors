@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>결과</title>
+</head>
+<body>
+<h1>결과</h1>
+
+<p>당신의 선택:</p>
+<img th:src="@{'/images/' + ${userChoice} + '.png'}" alt="사용자 선택">
+
+<p>컴퓨터의 선택:</p>
+<img th:src="@{'/images/' + ${computerChoice} + '.png'}" alt="컴퓨터 선택">
+
+<h2 th:text="${result}"></h2>
+
+<a th:href="@{/}">다시 하기</a>
+</body>
+</html>
