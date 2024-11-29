@@ -1,0 +1,74 @@
+/* 전체 레이아웃 */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9; /* 배경색 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* 제목 스타일 */
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 설명 텍스트 */
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* 버튼 그룹을 가운데 정렬 */
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+/* 버튼 호버 효과 */
+button:hover {
+    background-color: #45a049;
+}
+
+/* 결과 페이지 이미지 (선택 적용) */
+img {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: auto;
+}
+
+/* 다시 하기 링크 */
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #4CAF50;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #45a049;
+}
